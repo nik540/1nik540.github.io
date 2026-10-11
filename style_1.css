@@ -13,8 +13,24 @@ body {
 	/* grid-template:
 	"header header" auto
 	 "aside main"  1fr
-	 "footer footer" auto /
+	 "footer footer" auto /#5e5373#5e5373
 	 100px 1fr ; */
+}
+
+ .grid {
+	
+	background-color: #eee;
+	display: grid;
+}
+
+.grid__item {
+	
+	background-color: #5e5373;
+	border: 1px dashed #ece89d;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
 }
 
  .a {
