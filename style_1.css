@@ -1,11 +1,16 @@
 
 body {
+
 	font-style: normal;
 	font-size: 10pt;
 	font-family: "Times New Roman", Times, sans-serif;
 	margin: 0px 0px 0px 5px;
-	hyphens: none;
-	display: grid;
+	hyphens: non;
+	display:grid;
+	justify-items: start;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
 	/* row-gap: 20px; */
 	min-height: 92vh;
 	grid-template-rows: auto 1fr auto;
@@ -17,34 +22,23 @@ body {
 	 100px 1fr ; */
 }
 
- .grid {
+ .main {
 	
 	background-color: #eee;
 	display: grid;
+	justify-items: start;
+	align-items: start;
+	justify-content: start;
+	align-content: start;
 }
 
-.grid__item {
+.main__item {
 	
 	background-color: #5e5373;
 	border: 1px dashed #ece89d;
-	padding: 10px;
+	padding: 5px;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 700;
 }
-
- .a {
- 	
- }
  
- .header {
- 	
-} 
-
-.main {
-	
-}
-
-.footer {
-	
-}
