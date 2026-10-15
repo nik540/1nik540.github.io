@@ -6,7 +6,8 @@ a {
 }
 
 body {
-	margin: 0px 0px 0px 5px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 5px;
 	display: grid;
 	justify-items: stretch;
 	align-items: stretch;
@@ -22,20 +23,22 @@ body {
 	display: grid;
 	grid-auto-flow: column;
   grid-auto-columns: 330px; /* ширина каждой карточки */
-  gap: 5px;
-  overflow-x: auto;
- /* scroll-snap-type: x mandatory;*/
+  gap: 0px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  /*proximity;*/ /*none*/
 }
 
 .container {
   padding: 0px 0px 0px 0px;	
-  margin: 0px 0px 0px 0px;
+  margin: 0px -5px 0px 0px;
 	background-color: #eee;
 	display: grid;
 	justify-items: stretch;
 	align-items: stretch;
 	justify-content: start;
 	align-content: start;
+	scroll-snap-align: center;
 }
 
 .box {
