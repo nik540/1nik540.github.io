@@ -23,16 +23,16 @@ body {
 	display: grid;
 	grid-auto-flow: column;
   grid-auto-columns: 330px; /* ширина каждой карточки */
-  gap: 0px;
-  overflow-x:  auto;
+  overflow-x:  auto; 
   scroll-snap-type: x mandatory;
-  
+
 }
 
 .container {
   padding: 0px 0px 0px 0px;	
   margin: 0px -5px 0px 0px;
 	background-color: #eee;
+	border-radius: 0%;
 	display: grid;
 	justify-items: stretch;
 	align-items: stretch;
@@ -46,14 +46,16 @@ body {
 
 .box {
 	hyphens: none;
-	background-color: #5e5373;
+	/* background-color: #5e5373; */
+	 background-color: rgba(94, 83, 115, 1);
+	 border-radius: 0%;
 	border: 1px dashed #ece89d;
 	padding: 10px 0px 0px 0px;
 	color: #fff;
 	font-size: 13px;
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
-	/*overflow-y: auto;*/ 
+	
 	
 .element {
 		padding: 0px 0px 0px 0px;
@@ -74,3 +76,39 @@ body {
 	padding: 0px 0px 10px 5px;
 }
 
+
+
+/* Визуальные стрелки на чистом CSS 
+.main::before,
+.main::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Чтобы стрелки не мешали свайпу и кликам 
+  z-index: 2;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+  color: #333;
+}
+*/
+/* Левая стрелка 
+.main::before {
+	content: '‹';
+	left: 10px;
+}
+
+/* Правая стрелка 
+.main::after {
+	content: '›';
+	right: 10px;
+}*/
