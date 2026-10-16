@@ -24,9 +24,9 @@ body {
 	grid-auto-flow: column;
   grid-auto-columns: 330px; /* ширина каждой карточки */
   gap: 0px;
-  overflow-x: scroll;
+  overflow-x:  auto;
   scroll-snap-type: x mandatory;
-  /*proximity;*/ /*none*/
+  
 }
 
 .container {
@@ -39,6 +39,9 @@ body {
 	justify-content: start;
 	align-content: start;
 	scroll-snap-align: center;
+	overflow-y: auto;
+	height: 550px
+
 }
 
 .box {
@@ -50,6 +53,7 @@ body {
 	font-size: 13px;
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
+	/*overflow-y: auto;*/ 
 	
 .element {
 		padding: 0px 0px 0px 0px;
