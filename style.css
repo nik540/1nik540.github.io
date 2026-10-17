@@ -22,33 +22,34 @@ body {
 	padding: 0px 0px 0px 0px;
 	display: grid;
 	grid-auto-flow: column;
-  grid-auto-columns: 330px; /* ширина каждой карточки */
-  overflow-x:  auto; 
-  scroll-snap-type: x mandatory;
-
+	grid-auto-columns: 330px;
+	/* ширина каждой карточки */
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	
 }
 
 .container {
-  padding: 0px 0px 0px 0px;	
-  margin: 0px -5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px -5px 0px 0px;
 	background-color: #eee;
 	border-radius: 0%;
 	display: grid;
 	justify-items: stretch;
 	align-items: stretch;
-	justify-content: start;
+	justify-content: stretch;
 	align-content: start;
 	scroll-snap-align: center;
 	overflow-y: auto;
-	height: 550px
-
+	height: 550px;
+	
 }
 
 .box {
 	hyphens: none;
 	/* background-color: #5e5373; */
-	 background-color: rgba(94, 83, 115, 1);
-	 border-radius: 0%;
+	background-color: rgba(94, 83, 115, 1);
+	border-radius: 0%;
 	border: 1px dashed #ece89d;
 	padding: 10px 0px 0px 0px;
 	color: #fff;
@@ -57,28 +58,31 @@ body {
 	grid-template: 1fr / 1fr 1fr;
 	
 	
-.element {
+	
+	.element {
 		padding: 0px 0px 0px 0px;
+		
+		
 	}
-
-.content {
-  hyphens: none;
-	font-weight: 700;
-	display: inline-block;
-	padding: 0px 0px 10px 5px;
-}
-
-.content_1 {
-  color: #4AF6BB;
-	font-style: italic;
-	font-weight: 700;
-	display: inline-block;
-	padding: 0px 0px 10px 5px;
-}
-
-
-
-/* Визуальные стрелки на чистом CSS 
+	
+	.content {
+		hyphens: none;
+		font-weight: 700;
+		display: inline-block;
+		padding: 0px 0px 10px 5px;
+	}
+	
+	.content_1 {
+		color: #4AF6BB;
+		font-style: italic;
+		font-weight: 700;
+		display: inline-block;
+		padding: 0px 0px 10px 5px;
+	}
+	
+	
+	
+	/* Визуальные стрелки на чистом CSS 
 .main::before,
 .main::after {
   content: '';
@@ -101,7 +105,7 @@ body {
   color: #333;
 }
 */
-/* Левая стрелка 
+	/* Левая стрелка 
 .main::before {
 	content: '‹';
 	left: 10px;
