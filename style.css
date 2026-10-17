@@ -1,7 +1,7 @@
 a {
 	text-decoration: none;
 	font-style: normal;
-	font-size: 10pt;
+	font-size: 13px;
 	font-family: "Times New Roman";
 }
 
@@ -61,8 +61,24 @@ body {
 	
 	.element {
 		padding: 0px 0px 0px 0px;
-		
-		
+		/* display: grid; */
+	}
+	
+	.element__1 {
+		padding: 0px 0px 0px 0px;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+	}
+	
+	.element__2 {
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		justify-content: stretch;
+		align-content: center;
 	}
 	
 	.content {
