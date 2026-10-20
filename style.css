@@ -18,12 +18,10 @@ body {
 }
 
 .main {
-	/*margin: 5px 0px 5px 0px;*/
 	padding: 0px 0px 0px 0px;
 	display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 330px;
-	/* ширина каждой карточки */
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 }
@@ -31,11 +29,6 @@ body {
 .container {
 	margin: 0px -5px 0px 0px;
 	background-color: #eee;
-	/* display: grid; 
-	justify-items: stretch;
-	align-items: stretch;
-	justify-content: stretch;
-	align-content: start;*/
 	scroll-snap-align: center;
 	overflow-y: auto;
 	height: 550px;
@@ -51,10 +44,7 @@ body {
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
 	
-	.element {
-		/* padding: 0px 0px 0px 0px; */
-		/* d-%isplay: grid; */
-	}
+	.element {}
 	
 	.element__1 {
 		display: grid;
