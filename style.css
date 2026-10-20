@@ -26,30 +26,24 @@ body {
 	/* ширина каждой карточки */
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
-	
 }
 
 .container {
-	padding: 0px 0px 0px 0px;
 	margin: 0px -5px 0px 0px;
 	background-color: #eee;
-	border-radius: 0%;
-	display: grid;
+	/* display: grid; 
 	justify-items: stretch;
 	align-items: stretch;
 	justify-content: stretch;
-	align-content: start;
+	align-content: start;*/
 	scroll-snap-align: center;
 	overflow-y: auto;
 	height: 550px;
-	
 }
 
-.box {
-	hyphens: none;
-	/* background-color: #5e5373; */
+.block {
+	/* margin: 0px -5px 0px 0px; */
 	background-color: rgba(94, 83, 115, 1);
-	border-radius: 0%;
 	border: 1px dashed #ece89d;
 	padding: 10px 0px 0px 0px;
 	color: #fff;
@@ -57,15 +51,12 @@ body {
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
 	
-	
-	
 	.element {
-		padding: 0px 0px 0px 0px;
-		/* display: grid; */
+		/* padding: 0px 0px 0px 0px; */
+		/* d-%isplay: grid; */
 	}
 	
 	.element__1 {
-		padding: 0px 0px 0px 0px;
 		display: grid;
 		justify-items: center;
 		align-items: center;
@@ -86,17 +77,46 @@ body {
 		font-weight: 700;
 		display: inline-block;
 		padding: 0px 0px 10px 5px;
+		user-select: all;
 	}
 	
-	.content_1 {
+	.content__1 {
 		color: #4AF6BB;
 		font-style: italic;
 		font-weight: 700;
 		display: inline-block;
-		padding: 0px 0px 10px 5px;
+		padding: 0px 0px 0px 0px;
+		user-select: all;
+	}
+	
+	.content__1__1 {
+		color: #4AF6BB;
+		font-style: italic;
+		font-weight: 700;
+		display: inline-block;
+		padding: 5px 0px 5px 0px;
+		margin: 0px 0px 10px 0px;
+		user-select: all;
+		width: 150px;
+		white-space: pre-wrap;
+		outline: 1px solid #ccc;
+	}
+	
+	.content__2__1 {
+		font-weight: 700;
+		display: inline-block;
+		padding: 5px 0px 5px 0px;
+		margin: 0px 0px 10px 0px;
+		user-select: all;
+		width: 150px;
+		white-space: pre-wrap;
+		outline: 1px solid #ccc;
 	}
 	
 	
+	
+	
+	/* ............................... */
 	
 	/* Визуальные стрелки на чистом CSS 
 .main::before,
