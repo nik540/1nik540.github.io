@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
 a {
 	text-decoration: none;
 	font-style: normal;
@@ -5,9 +12,14 @@ a {
 	font-family: "Times New Roman";
 }
 
+html {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
 body {
 	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
 	display: grid;
 	justify-items: stretch;
 	align-items: stretch;
@@ -19,15 +31,18 @@ body {
 
 .main {
 	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	display: grid;
 	grid-auto-flow: column;
-	grid-auto-columns: 330px;
+	grid-auto-columns: minmax(100vmin, 330px);
+	/* gap: 5px; */
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 }
 
 .container {
-	margin: 0px -5px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	background-color: #eee;
 	scroll-snap-align: center;
 	overflow-y: auto;
@@ -35,7 +50,8 @@ body {
 }
 
 .block {
-	/* margin: 0px -5px 0px 0px; */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
 	border: 1px dashed #ece89d;
 	padding: 10px 0px 0px 0px;
@@ -43,72 +59,102 @@ body {
 	font-size: 13px;
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
-	
-	.element {}
-	
-	.element__1 {
-		display: grid;
-		justify-items: center;
-		align-items: center;
-		justify-content: center;
-		align-content: center;
-	}
-	
-	.element__2 {
-		display: grid;
-		justify-items: center;
-		align-items: center;
-		justify-content: stretch;
-		align-content: center;
-	}
-	
-	.content {
-		hyphens: none;
-		font-weight: 700;
-		display: inline-block;
-		padding: 0px 0px 10px 5px;
-		user-select: all;
-	}
-	
-	.content__1 {
-		color: #4AF6BB;
-		font-style: italic;
-		font-weight: 700;
-		display: inline-block;
-		padding: 0px 0px 0px 0px;
-		user-select: all;
-	}
-	
-	.content__1__1 {
-		color: #4AF6BB;
-		font-style: italic;
-		font-weight: 700;
-		display: inline-block;
-		padding: 5px 0px 5px 0px;
-		margin: 0px 0px 10px 0px;
-		user-select: all;
-		width: 150px;
-		white-space: pre-wrap;
-		outline: 1px solid #ccc;
-	}
-	
-	.content__2__1 {
-		font-weight: 700;
-		display: inline-block;
-		padding: 5px 0px 5px 0px;
-		margin: 0px 0px 10px 0px;
-		user-select: all;
-		width: 150px;
-		white-space: pre-wrap;
-		outline: 1px solid #ccc;
-	}
-	
-	
-	
-	
-	/* ............................... */
-	
-	/* Визуальные стрелки на чистом CSS 
+	/* align-items: start; */
+}
+
+.block__1 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: rgba(94, 83, 115, 1);
+	border: 1px dashed #ece89d;
+	padding: 10px 0px 0px 0px;
+	color: #fff;
+	font-size: 13px;
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	align-items: start;
+}
+
+.element {
+	/* display: flex;
+	flex-wrap: wrap; */
+	display: inline-block;
+}
+
+
+.element__1 {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.element__2 {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	justify-content: stretch;
+	align-content: center;
+}
+
+.element__0__1 {}
+
+.element__2__1 {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	justify-content: stretch;
+	align-content: stretch;
+}
+
+.content {
+	/* hyphens: none; */
+	font-weight.: 700;
+	display: inline-block;
+	padding: 0px 0px 10px 5px;
+	user-select: all;
+}
+
+.content__1 {
+	color: #4AF6BB;
+	font-style: italic;
+	font-weight: 700;
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+	user-select: all;
+}
+
+.content__1__1 {
+ color: #4AF6BB;
+	font-style: italic;
+	font-weight: 700;
+	display: inline-block;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 10px 0px;
+	user-select: all;
+	width: 150px;
+	white-space: pre-wrap;
+	outline: 1px solid #ccc;
+}
+
+.content__2__1 {
+	font-weight: 700;
+	display: inline-block;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 10px 0px;
+	user-select: all;
+	width: 150px;
+	white-space: pre-wrap;
+	outline: 1px solid #ccc;
+}
+
+
+
+
+/* ............................... */
+
+/* Визуальные стрелки на чистом CSS 
 .main::before,
 .main::after {
   content: '';
@@ -131,7 +177,7 @@ body {
   color: #333;
 }
 */
-	/* Левая стрелка 
+/* Левая стрелка 
 .main::before {
 	content: '‹';
 	left: 10px;
