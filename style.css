@@ -5,10 +5,17 @@
 	outline: 0;
 }
 
+html {
+	font-size: 14px;
+/* hyphens: auto; */
+overflow-wrap: anywhere;
+/* word-break: break-all; */
+}
+
 a {
 	text-decoration: none;
 	font-style: normal;
-	font-size: 13px;
+	/* font-size: 13px; */
 	font-family: "Times New Roman";
 }
 
@@ -25,7 +32,6 @@ body {
 }
 
 .main {
-	font-size: 13px;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	display: grid;
@@ -49,86 +55,154 @@ body {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
-	border: 1px dashed #ece89d;
-	padding: 10px 0px 5px 0px;
+	/* border: 1px dashed #ece89d; */
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
+
 }
 
 .block__title {
 	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
-	border: 1px dashed #ece89d;
-	font-size: 13px;
+
+	/* border: 1px dashed #ece89d; */
 }
 
 .element {
-	background-color: rgba(94, 83, 115, 1);
-	margin: 0px 0px -1px 0px;
-	padding: 0px 0px 0px 5px;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 5px;
+	display: grid;
+	justify-items: start;
+	align-items: start;
+	justify-content: start;
+	align-content: start;
+	border: 1px dashed #ece89d;
+	/* background-color: rgba(94, 83, 115, 1); */
 }
 
 .element__1 {
-	display: grid;
-	justify-items: center;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	background-color: rgba(94, 83, 115, 1);
-	margin: 0px 0px -1px 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 5px;
+	/* display: grid; */
+	border: 1px dashed #ece89d;
+	/* background-color: rgba(94, 83, 115, 1); */
 }
 
 .element__2 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 5px 0px 5px;
+	display: grid;
+	justify-items: end;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	/* background-color: rgba(94, 83, 115, 1); */
+	border: 1px dashed #ece89d;
+}
+
+.element__3 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	display: grid;
 	justify-items: start;
 	align-items: center;
 	justify-content: stretch;
 	align-content: center;
 	background-color: rgba(94, 83, 115, 1);
-	margin: 0px 0px -1px 0px;
-	padding: 0px 0px 0px 5px;
+	border: 1px dashed #ece89d;
+
+}
+
+.element__title {
+	padding: 5px 0px 5px 0px;
+	display: flex;
+	justify-content: center;
+	border: 1px dashed #ece89d;
+
 }
 
 .content {
-	/* hyphens: none; */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	color: #fff;
 	font-weight: 700;
 	display: inline-block;
-	/* display: block; */
-	padding: 0px 0px 10px 5px;
+	user-select: all;
+	
+	
+}
+
+.content__0 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+	color: #4AF6BB;
+  /* font-style: italic; */
+	font-weight: 500;
+	display: inline-block;
+	user-select: all;
+}
+
+.content__00 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #fff;
+
+  /* font-style: italic; */
+	/* font-weight: 500; */
+	display: inline-block;
 	user-select: all;
 }
 
 .content__1 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	color: #4AF6BB;
 	font-style: italic;
 	font-weight: 700;
 	display: inline-block;
-	/* display: block; */
-	padding: 0px 5px 5px 0px;
 	user-select: all;
+
+}
+
+.content__title {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #fff;
+	font-weight: 1000;
+	/* font-style: italic; */
+	display: inline-block;
+	user-select: all;
+	font-size: 15px;
 }
 
 /* ..................................*/
 /* ..................................*/
+
+
+
+
+/* ..................................*/
 /* ..................................*/
 
 .element__contenteditable {
+	padding: 5px 0px 0px 0px;
 	display: grid;
 	justify-items: center;
 	align-items: center;
 	justify-content: stretch;
 	align-content: stretch;
+	border: 1px dashed #ece89d;
+
 }
 
 .content__contenteditable__1 {
+	margin: 0px 0px 10px 0px;
+	padding: 5px 5px 5px 5px;
 	color: #4AF6BB;
 	font-style: italic;
 	font-weight: 700;
 	display: inline-block;
-	padding: 5px 0px 5px 0px;
-	margin: 0px 0px 10px 0px;
 	user-select: all;
 	width: 150px;
 	white-space: pre-wrap;
@@ -136,25 +210,49 @@ body {
 }
 
 .content__contenteditable__2 {
+	margin: 0px 0px 10px 0px;
+	padding: 5px 5px 5px 5px;
 	color: #fff;
 	font-weight: 700;
-	/* display: inline-block; */
-	padding: 5px 0px 5px 0px;
-	margin: 0px 0px 10px 0px;
+	display: inline-block;
 	user-select: all;
 	width: 150px;
 	white-space: pre-wrap;
 	outline: 1px solid #ccc;
 }
 
+/* ...........КОНСТРУКТОР............*/
+/* ............................х......*/
+
+.block__constructor {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: rgba(94, 83, 115, 1);
+
+	/* border: 1px dashed #ece89d; */
+}
 
 
-/* ..................................*/
+.user-select {
+	user-select: all;
+}
+
+
+
+/* .element, .element__1, .element__2, .element__3 {
+	background-color: #496BB1;
+} */
+
+/* .content, .content__1 {
+	background-color: #82B149EB;
+	
+} */
+
+/* ...............СТРЕЛКИ.............*/
 /* ..................................*/
 /* ............................... */
 
-/* Визуальные стрелки на чистом CSS 
-.main::before,
+/* .main::before,
 .main::after {
   content: '';
   position: absolute;
@@ -163,27 +261,27 @@ body {
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
-  /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
   border-radius: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* Чтобы стрелки не мешали свайпу и кликам 
+  pointer-events: none; Чтобы стрелки не мешали свайпу и кликам 
   z-index: 2;
   font-weight: bold;
   font-family: monospace;
   font-size: 20px;
   color: #333;
-}
-*/
-/* Левая стрелка 
-.main::before {
+} */
+
+/* Левая стрелка */
+/* .main::before {
 	content: '‹';
 	left: 10px;
-}
+} */
 
-/* Правая стрелка 
-.main::after {
+/* Правая стрелка */
+/* .main::after {
 	content: '›';
 	right: 10px;
-}*/
+} */
