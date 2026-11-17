@@ -15,3 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
         target.scrollIntoView({ behavior: "auto", inline: "center" });
     }
 });
+
+// const editor = document.querySelector('[contenteditable="true"]');
+
+// editor.addEventListener('paste', (e) => {
+//   // Отменяем стандартную вставку с HTML
+//   e.preventDefault();
+
+//   // Получаем только чистый текст из буфера обмена
+//   const text = (e.clipboardData || window.clipboardData).getData('text/plain');
+
+//   // Вставляем текст в текущую позицию курсора
+//   const selection = window.getSelection();
+//   if (!selection.rangeCount) return;
+
+//   selection.deleteFromDocument();
+//   selection.getRangeAt(0).insertNode(document.createTextNode(text));
+  
+//   // Перемещаем курсор в конец вставленного текста
+//   selection.collapseToEnd();
+// });
