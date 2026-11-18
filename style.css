@@ -74,7 +74,8 @@ body {
 	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
 	border: 1px dashed #ece89d;
-	
+	user-select: all;
+
 	/* border: 1px dashed #ece89d; */
 }
 
@@ -139,7 +140,7 @@ body {
 	align-items: start;
 	justify-content: start;
 	align-content: start;
-	user-select: all;
+	/* user-select: all; */
 
 	/* border: 1px dashed #ece89d; */
 	/* background-color: rgba(94, 83, 115, 1); */
