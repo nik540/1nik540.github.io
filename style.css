@@ -49,13 +49,25 @@ body {
 	scroll-snap-align: center;
 	overflow-y: auto;
 	height: 92vh;
+	border: 1px dashed #ece89d;
+	
 }
 
 .block {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
-	/* border: 1px dashed #ece89d; */
+	border-top: 1px dashed #ece89d;
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	
+}
+
+.block__0 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: rgba(94, 83, 115, 1);
+	/* border-top: 1px dashed #ece89d; */
 	display: grid;
 	grid-template: 1fr / 1fr 1fr;
 	
@@ -65,6 +77,7 @@ body {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
+	border-top: 1px dashed #ece89d;
 	
 	/* border: 1px dashed #ece89d; */
 }
@@ -73,9 +86,23 @@ body {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	background-color: rgba(94, 83, 115, 1);
-	border: 1px dashed #ece89d;
+	/* border: 1px dashed #ece89d; */
 	user-select: all;
+	border-top: 1px dashed #ece89d;
+	
+	
+	/* border: 1px dashed #ece89d; */
+}
 
+.block__constructor__1 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: rgba(94, 83, 115, 1);
+	/* border: 0px 1px 0px 1px  dashed #ece89d; */
+	user-select: all;
+	border-top: 1px dashed #ece89d;
+	
+	
 	/* border: 1px dashed #ece89d; */
 }
 
@@ -87,15 +114,23 @@ body {
 	align-items: start;
 	justify-content: start;
 	align-content: start;
-	border: 1px dashed #ece89d;
+	border-left: 1px dashed #ece89d;
+	
+	/* border: 1px  dashed #ece89d; */
+	
+	
 	/* background-color: rgba(94, 83, 115, 1); */
 }
 
 .element__1 {
 	margin: 0px 0px 0px 0px;
 	padding: 5px 0px 5px 5px;
+	border-left: 1px dashed #ece89d;
+	
+	/* border: 1px  dashed #ece89d; */
+	
 	/* display: grid; */
-	border: 1px dashed #ece89d;
+	/* border: 1px dashed #ece89d; */
 	/* background-color: rgba(94, 83, 115, 1); */
 }
 
@@ -107,8 +142,11 @@ body {
 	align-items: center;
 	justify-content: center;
 	align-content: center;
+	border-left: 1px dashed #ece89d;
+	
 	/* background-color: rgba(94, 83, 115, 1); */
-	border: 1px dashed #ece89d;
+	/* border: 1px dashed #ece89d; */
+	
 }
 
 .element__3 {
@@ -120,16 +158,16 @@ body {
 	justify-content: stretch;
 	align-content: center;
 	background-color: rgba(94, 83, 115, 1);
-	border: 1px dashed #ece89d;
-	
+	/* border: 1px dashed #ece89d; */
 }
 
 .element__title {
 	padding: 5px 0px 5px 0px;
 	display: flex;
 	justify-content: center;
-	border: 1px dashed #ece89d;
+	user-select: all;
 	
+	/* border: 1px dashed #ece89d; */
 }
 
 .element__constructor {
@@ -140,8 +178,8 @@ body {
 	align-items: start;
 	justify-content: start;
 	align-content: start;
-	/* user-select: all; */
-
+	user-select: all;
+	
 	/* border: 1px dashed #ece89d; */
 	/* background-color: rgba(94, 83, 115, 1); */
 }
@@ -157,7 +195,7 @@ body {
 
 .content__0 {
 	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
 	color: #4AF6BB;
 	/* font-style: italic; */
 	font-weight: 500;
@@ -182,6 +220,17 @@ body {
 	padding: 0px 0px 0px 0px;
 	color: #4AF6BB;
 	font-weight: 700;
+	/* font-style: italic; */
+	display: inline-block;
+	user-select: all;
+}
+
+.content__constructor {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	/* color: #fff; */
+	color: #ece89d;
+	font-weight: 700;
 	font-style: italic;
 	display: inline-block;
 	user-select: all;
@@ -198,13 +247,58 @@ body {
 }
 
 .text {
+	/* color: #4AF6BB; */
 	color: #fff;
 	font-weight: 700;
+	font-style: normal;
+	
+	/* font-weight: 700; */
 	display: inline-block;
 	max-height: 320px;
-	max-width: 320px;
-	width: 120px;
-	height: 15px;
+	/* max-width: 320px; */
+	width: 320px;
+	/* height: 15px; */
+}
+
+.text__1 {
+	color: #4AF6BB;
+	/* color: #fff; */
+	font-weight: 700;
+	font-style: normal;
+
+	display: inline-block;
+	max-height: 320px;
+	/* max-width: 320px; */
+	width: 320px;
+	/* height: 15px; */
+}
+
+.text__0 {
+	color: #4AF6BB;
+	/* color: #fff; */
+	/* font-weight: 700; */
+	font-style: normal;
+	font-weight: normal;
+
+	display: inline-block;
+	max-height: 320px;
+	/* max-width: 320px; */
+	width: 320px;
+	/* height: 15px; */
+}
+
+.text__00 {
+	/* color: #4AF6BB; */
+	color: #fff;
+	/* font-weight: 700; */
+	font-style: normal;
+	
+	font-weight: normal;
+	display: inline-block;
+	max-height: 320px;
+	/* max-width: 320px; */
+	width: 320px;
+	/* height: 15px; */
 }
 
 
