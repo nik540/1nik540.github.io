@@ -231,6 +231,16 @@ body {
 }
 
 .text {
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	display: inline-block;
+	max-height: 320px;
+	/* max-width: 320px; */
+	width: 320px;
+}
+
+.text__2 {
 	border: 1px dashed #ece89d;
 	color: #fff;
 	font-weight: 700;
@@ -276,7 +286,6 @@ body {
 	/* max-width: 320px; */
 	width: 320px;
 }
-
 
 /* ..................................*/
 /* ..................................*/
