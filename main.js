@@ -7,7 +7,7 @@
 
 // Ждем полную загрузку DOM-дерева
 document.addEventListener("DOMContentLoaded", () => {
-    const target = document.getElementById("target-item");
+    const target = document.getElementById("units");
     
     if (target) {
         // Скроллим к элементу. 

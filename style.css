@@ -262,6 +262,18 @@ body {
 	width: 320px;
 }
 
+.text__id {
+	border: 1px dashed #ece89d;
+	color: #4AF6BB;
+	font-weight: 1000;
+	font-style: normal;
+	display: inline-block;
+	max-height: 320px;
+	/* max-width: 320px; */
+	width: 160px;
+}
+
+
 .text__0 {
 	border: 1px dashed #ece89d;
 
