@@ -241,7 +241,7 @@ body {
 }
 
 .text__2 {
-	border: 1px dashed #ece89d;
+	border: 1px solid #ece89d;
 	color: #fff;
 	font-weight: 700;
 	font-style: normal;
@@ -252,7 +252,7 @@ body {
 }
 
 .text__1 {
-	border: 1px dashed #ece89d;
+	border: 1px solid #ece89d;
 	color: #4AF6BB;
 	font-weight: 700;
 	font-style: normal;

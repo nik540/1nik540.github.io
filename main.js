@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+console.log("Скрипт з окремого файлу!");
+
+// alert("Привет, мир!");
+
 // const editor = document.querySelector('[contenteditable="true"]');
 
 // editor.addEventListener('paste', (e) => {
